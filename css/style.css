@@ -18,6 +18,7 @@ body {
 .header {
     display:flex;
     justify-content: center;
+    align-items: center;
     background-color: black;
     position:fixed;
     top: 0;
@@ -40,8 +41,19 @@ body {
     background-color: #ddd;
 }
 
+#git {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .link {
     text-decoration: none; 
+}
+
+.link img {
+    background-color: #fff;
+    margin-left:10px;
 }
 
 .main {
@@ -69,10 +81,15 @@ h1, h2 {
 }
 
 .section {
+    scroll-margin-top: 70px;
     width: 80%;
     margin: 10px auto;
-    padding: 20px 15px 15px; 
+    padding: 0 15px; 
     border: 1px solid black;
+}
+
+.section p {
+    text-align: justify;
 }
 
 .aside {
