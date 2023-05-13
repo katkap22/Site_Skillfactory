@@ -11,19 +11,25 @@ body {
 
 .wrapper {
     min-height: 100vh;
-    display:Flex;
+    display: flex;
     flex-direction: column;
 }
 
 .header {
-    display:flex;
-    justify-content: center;
-    align-items: center;
     background-color: black;
-    position:fixed;
+    position: fixed;
     top: 0;
     width: 100%;
+    height: 70px;
     font-family: 'Noto Serif', 'Times New Roman', serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header a {
@@ -42,18 +48,18 @@ body {
 }
 
 #git {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
 .link {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .link img {
     background-color: #fff;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 .main {
@@ -65,26 +71,30 @@ body {
 }
 
 h1, h2 {
+    display: block;
+    margin: 20px auto;
     text-align: center;
     font-family: 'Noto Serif', 'Times New Roman', serif;
 }
 
 .image {
-    background-color:#bbc9c9;
-    width: 410px;
-    height: 410px;
-    margin: 0 auto;
+    background-color: #bbc9c9;
+    width: 60%;
+    margin: 20px auto;
 }
 
 .image img {
+    width: 95%;
+    height: 95%;
     padding: 5px;
+
 }
 
 .section {
     scroll-margin-top: 70px;
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
-    padding: 0 15px; 
+    padding: 0 15px 5px 15px;
     border: 1px solid black;
 }
 
@@ -93,7 +103,10 @@ h1, h2 {
 }
 
 .aside {
-    width: 400px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 40%;
     flex-grow: 0;
     text-align: center;
 }
@@ -103,13 +116,33 @@ h1, h2 {
     align-items: center;
     justify-content: center;
 }
+
 .contact-icon {
     margin-right: 20px;
 }
 
 .main__section {
     flex-grow: 1;
-    padding-left: 50px;
+    padding-left: 360px;
+    /*width: 55%;*/
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list__item {
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.list__item img {
+    margin-bottom: 5px;
 }
 
 .footer {
